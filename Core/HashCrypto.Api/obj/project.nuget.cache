@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AKSR5xI2Z9g=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\italo\\Documents\\Repositories\\Git\\HashCryptoApp\\Core\\HashCrypto.Api\\HashCrypto.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.12\\microsoft.aspnetcore.openapi.9.0.12.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

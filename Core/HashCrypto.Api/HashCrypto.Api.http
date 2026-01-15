@@ -1,0 +1,6 @@
+@HashCrypto.Api_HostAddress = http://localhost:5239
+
+GET {{HashCrypto.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

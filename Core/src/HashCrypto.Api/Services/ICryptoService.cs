@@ -2,5 +2,6 @@
 
 public interface ICryptoService
 {
-    string GetCryptoText(string text, string sharedSecret);
+    string GetEncryptedText(string text, string sharedSecret);
+    string GetDecryptedText(byte[] inBuffer, string sharedSecret);
 }

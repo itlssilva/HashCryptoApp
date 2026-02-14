@@ -1,8 +1,15 @@
 services:
   hashcrypto-api:
     build:
-      context: .
+      context: ./Core
       dockerfile: Dockerfile
     ports:
       - "5239:8080"
       - "5240:8081"
+
+  hashcrypto-web:
+    build:
+      context: ./hash-crypto-app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"

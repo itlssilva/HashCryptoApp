@@ -1,3 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
-
+/* HashCryptoApp */
 @import "tailwindcss";
+
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #151515;
+  --accent-primary: #ed145b;
+  --accent-secondary: #d30f59;
+  --text-primary: #ffffff;
+  --text-secondary: #AAAAAA;
+  --text-muted: #696969;
+  --text-dark: #8f8f8f;
+  --border-color: #3E3E3E;
+  --border-light: #363636;
+}
+
+/* Reset e estilos base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+
+.btn-hashcrypto {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  border: 2px solid var(--accent-primary);
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-hashcrypto:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.btn-hashcrypto-filled {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+}
+
+.btn-hashcrypto-filled:hover {
+  background-color: var(--accent-secondary);
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}

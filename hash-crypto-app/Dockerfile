@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build -- --configuration=production --ssr=false
+RUN npm run build -- --configuration=production
 
 # Publish stage
 FROM nginx:alpine

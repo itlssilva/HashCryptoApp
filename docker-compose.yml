@@ -3,6 +3,7 @@ services:
     build:
       context: ./Core
       dockerfile: Dockerfile
+    restart: no # always
     ports:
       - "5239:8080"
       - "5240:8081"
@@ -11,5 +12,6 @@ services:
     build:
       context: ./hash-crypto-app
       dockerfile: Dockerfile
+    restart: no # always
     ports:
       - "4200:80"
